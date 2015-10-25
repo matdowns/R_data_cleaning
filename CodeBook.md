@@ -63,7 +63,7 @@ For each of these parameters, the following summary statistics were collected:
 
 For this assignment, we used only the mean() and std() set of variables and dropped the other calculated summary statistics for each parameter.
 
-A detailed description of the experimental design of the study can be found at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. The raw datasets themselves are located at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+A detailed description of the experimental design of the study can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 
 ###Notes on the original (raw) data 
 The assignment required use of 8 of the provided raw datasets:
@@ -106,32 +106,32 @@ From the original raw data documentation, the name of each factor is composed of
 * The third component indicates whether the mean() or std() is being summarized
 * The fourth component (if applicable) indicates whether the x, y, or z direction is being summarized
 * Levels:
-	+ [1] fBodyAcc-mean()-X           fBodyAcc-mean()-Y           fBodyAcc-mean()-Z          
-	+ [4] fBodyAcc-std()-X            fBodyAcc-std()-Y            fBodyAcc-std()-Z           
-	+ [7] fBodyAccJerk-mean()-X       fBodyAccJerk-mean()-Y       fBodyAccJerk-mean()-Z      
-	+ [10] fBodyAccJerk-std()-X        fBodyAccJerk-std()-Y        fBodyAccJerk-std()-Z       
-	+ [13] fBodyAccMag-mean()          fBodyAccMag-std()           fBodyBodyAccJerkMag-mean() 
-	+ [16] fBodyBodyAccJerkMag-std()   fBodyBodyGyroJerkMag-mean() fBodyBodyGyroJerkMag-std() 
-	+ [19] fBodyBodyGyroMag-mean()     fBodyBodyGyroMag-std()      fBodyGyro-mean()-X         
-	+ [22] fBodyGyro-mean()-Y          fBodyGyro-mean()-Z          fBodyGyro-std()-X          
-	+ [25] fBodyGyro-std()-Y           fBodyGyro-std()-Z           tBodyAcc-mean()-X          
-	+ [28] tBodyAcc-mean()-Y           tBodyAcc-mean()-Z           tBodyAcc-std()-X           
-	+ [31] tBodyAcc-std()-Y            tBodyAcc-std()-Z            tBodyAccJerk-mean()-X      
-	+ [34] tBodyAccJerk-mean()-Y       tBodyAccJerk-mean()-Z       tBodyAccJerk-std()-X       
-	+ [37] tBodyAccJerk-std()-Y        tBodyAccJerk-std()-Z        tBodyAccJerkMag-mean()     
-	+ [40] tBodyAccJerkMag-std()       tBodyAccMag-mean()          tBodyAccMag-std()          
-	+ [43] tBodyGyro-mean()-X          tBodyGyro-mean()-Y          tBodyGyro-mean()-Z         
-	+ [46] tBodyGyro-std()-X           tBodyGyro-std()-Y           tBodyGyro-std()-Z          
-	+ [49] tBodyGyroJerk-mean()-X      tBodyGyroJerk-mean()-Y      tBodyGyroJerk-mean()-Z     
-	+ [52] tBodyGyroJerk-std()-X       tBodyGyroJerk-std()-Y       tBodyGyroJerk-std()-Z      
-	+ [55] tBodyGyroJerkMag-mean()     tBodyGyroJerkMag-std()      tBodyGyroMag-mean()        
-	+ [58] tBodyGyroMag-std()          tGravityAcc-mean()-X        tGravityAcc-mean()-Y       
-	+ [61] tGravityAcc-mean()-Z        tGravityAcc-std()-X         tGravityAcc-std()-Y        
-	+ [64] tGravityAcc-std()-Z         tGravityAccMag-mean()       tGravityAccMag-std()
+	+ [1] fBodyAcc-mean()-X,            fBodyAcc-mean()-Y,           fBodyAcc-mean()-Z          
+	+ [4] fBodyAcc-std()-X,             fBodyAcc-std()-Y,            fBodyAcc-std()-Z           
+	+ [7] fBodyAccJerk-mean()-X,        fBodyAccJerk-mean()-Y,       fBodyAccJerk-mean()-Z      
+	+ [10] fBodyAccJerk-std()-X,        fBodyAccJerk-std()-Y,        fBodyAccJerk-std()-Z       
+	+ [13] fBodyAccMag-mean(),          fBodyAccMag-std(),           fBodyBodyAccJerkMag-mean() 
+	+ [16] fBodyBodyAccJerkMag-std(),   fBodyBodyGyroJerkMag-mean(), fBodyBodyGyroJerkMag-std() 
+	+ [19] fBodyBodyGyroMag-mean(),     fBodyBodyGyroMag-std(),      fBodyGyro-mean()-X         
+	+ [22] fBodyGyro-mean()-Y,          fBodyGyro-mean()-Z,          fBodyGyro-std()-X          
+	+ [25] fBodyGyro-std()-Y,           fBodyGyro-std()-Z,           tBodyAcc-mean()-X          
+	+ [28] tBodyAcc-mean()-Y,           tBodyAcc-mean()-Z,           tBodyAcc-std()-X           
+	+ [31] tBodyAcc-std()-Y,            tBodyAcc-std()-Z,            tBodyAccJerk-mean()-X      
+	+ [34] tBodyAccJerk-mean()-Y,       tBodyAccJerk-mean()-Z,       tBodyAccJerk-std()-X       
+	+ [37] tBodyAccJerk-std()-Y,        tBodyAccJerk-std()-Z,        tBodyAccJerkMag-mean()     
+	+ [40] tBodyAccJerkMag-std(),       tBodyAccMag-mean(),          tBodyAccMag-std()          
+	+ [43] tBodyGyro-mean()-X,          tBodyGyro-mean()-Y,          tBodyGyro-mean()-Z         
+	+ [46] tBodyGyro-std()-X,           tBodyGyro-std()-Y,           tBodyGyro-std()-Z          
+	+ [49] tBodyGyroJerk-mean()-X,      tBodyGyroJerk-mean()-Y,      tBodyGyroJerk-mean()-Z     
+	+ [52] tBodyGyroJerk-std()-X,       tBodyGyroJerk-std()-Y,       tBodyGyroJerk-std()-Z      
+	+ [55] tBodyGyroJerkMag-mean(),     tBodyGyroJerkMag-std(),      tBodyGyroMag-mean()        
+	+ [58] tBodyGyroMag-std(),          tGravityAcc-mean()-X,        tGravityAcc-mean()-Y       
+	+ [61] tGravityAcc-mean()-Z,        tGravityAcc-std()-X,         tGravityAcc-std()-Y        
+	+ [64] tGravityAcc-std()-Z,         tGravityAccMag-mean(),       tGravityAccMag-std()
 
 ###Variable 4 = mean_by_subj_act
 Numeric containing the calculated mean for each combination of Subject, Activity, and variable (i.e., for each combination of the other 3 columns in the data frame). The variable is unitless because the investigators normalized each parameter in the dataset so that it would be in the interval [-1, 1].
 
 ##Sources
-[Documentation of original experiment](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-[Raw data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+* [Documentation of original experiment](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+* [Raw data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
