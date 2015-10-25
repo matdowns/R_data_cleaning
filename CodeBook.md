@@ -86,7 +86,6 @@ The assignment required use of 8 of the provided raw datasets:
 5. From the data set in Step 4, write out a text file, tidy.txt, that contains a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ##Description of the variables in the tidy.txt file
-General description of the file including:
 * Dataset is the long implementation of a tidy dataset
 * Contains 11,800 observations, one for each combination of 30 subjects, 6 activities, and 66 parameter/summary statistic combinations.
 * 4 variables as described below 
